@@ -128,7 +128,6 @@ header {
     /* position: absolute; абсолютное позиционирование */
     top: 40%; /* размещаем изображение по вертикали на 50% от верхней границы .head */
     left: 10%; /* размещаем изображение в самом начале по горизонтали */
-    transform: translateY(-50%); /* сдвигаем изображение на -50% относительно своей высоты, чтобы оно оказалось по центру по вертикали */
 }
 
 .head_img {
@@ -136,7 +135,7 @@ header {
     align-items: center;
 }
 
-.button-container {
+.nav-container {
     /*
     position: absolute; абсолютное позиционирование
     bottom: 0; размещаем контейнер снизу
@@ -149,26 +148,31 @@ header {
     justify-content: flex-end; /* прижимаем к правому краю блока .head */
 }
 
-.button-container button {
-    background-color: transparent; /* делаем фон кнопки прозрачным */
-    border: none; /* убираем границу у кнопок */
-    color: rgb(30, 33, 39); /* изменяем цвет текста на синий */
-    padding: 10px 20px; /* внутренние отступы */
-    margin-left: 5px; /* добавляем небольшое пространство между кнопками */
-    opacity: 0.8; /* устанавливаем прозрачность */
+.nav-container a {
+    margin: 0 30px;
+    padding: 28px 0;
+    border: 0;
+    float: left;
+    cursor: pointer;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
     font-size: 17px; /* увеличиваем размер текста */
+    line-height: 24px;
+    color: #000000;
+    position: relative;
+    background-color: transparent; /* делаем фон кнопки прозрачным */
+    opacity: 0.8; /* устанавливаем прозрачность */
     transition: color 0.3s; /* добавляем плавный переход для изменения цвета текста */
-    display: block; /* отображение в виде блока */
-    margin-bottom: 10px; /* отступ снизу между кнопками */
-    display: block; /* отображение в виде блока */
-    margin-bottom: 10px; /* отступ снизу между кнопками */
-    margin-left: 10px;
 }
-.button-container button:hover {
-    color: rgb(44, 114, 172); /* изменяем цвет текста при наведении на кнопку */
+.nav-container a:hover {
+    color: #007def; /* изменяем цвет текста при наведении на кнопку */
+    font-style: normal;
+    /* font-weight: bold; */
+    line-height: 24px;
 }
 
-.body {
+.nav_1_content {
     position: relative; /* устанавливаем родительский контейнер для абсолютного позиционирования */
     /* width: 100%; задаем ширину 100% */
     font-family: Montserrat , Spoqa Han Sans Neo;
@@ -260,4 +264,31 @@ header {
     margin-bottom: 5%;
     width: 100%; /* максимальная ширина изображения равна ширине контейнера */
     height: auto;
+}
+
+.nav_2_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.block_text_container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_text {
+    font-family: Montserrat;
+}
+
+.block_img {
+    width: 50%;
+}
+
+.bg {
+    background: url(.static/images/site_service_img_03.png);
+    width: 100%;
+    height: 834px;
 }
