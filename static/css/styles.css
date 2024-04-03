@@ -89,6 +89,19 @@ body {
     display: grid;
 }
 
+*::-webkit-scrollbar {
+    width: 10px; /* Ширина скроллбара */
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #888; /* Цвет ползунка скроллбара */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin; /* Ширина скроллбара */
+    scrollbar-color: #888 #f4f4f4; /* Цвет ползунка и фона скроллбара */
+}
+
 header {
     position: fixed;
     top: 0;
@@ -293,11 +306,31 @@ main {
     align-items: center;
 }
 
+.main_content3_container {
+    justify-content: start;
+    padding: 8% 0% 0 0;
+}
+
+.main_content4_container {
+    width: 100%;
+    align-items: end;
+    justify-content: start;
+    padding: 10% 5% 0 50%;
+}
+
 .main_page_container {
     width: 100%;
     padding: 11% 0 10% 15%;
 }
 
+.main_content2_text {
+    width: 100%;
+    padding: 8% 0 45% 0;
+}
+
+.main_content4_text {
+    text-align: left;
+}
 
 .block_text {
     font-family: Montserrat;
@@ -366,13 +399,17 @@ main {
     display: block;
 }
 
+.info_img {
+    width: auto;
+}
+
 .block_img {
     width: 50%;
 }
 
 
 .bg_icon {
-    /* background-size: cover; */
+    background-size: cover;
     width: 100%;
     height: 834px;
 }
@@ -396,28 +433,70 @@ main {
     height: 834px;
 }
 
+.bg_main_content2 {
+    background: url("/static/images/Изображение WhatsApp 2024-04-01 в 01.32.01_5221fe7e.jpg");
+    background-size: cover;
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+    width: 100%;
+    height: 834px;
+}
+
+.bg_main_content3 {
+    background: url("/static/images/Изображение\ WhatsApp\ 2024-04-01\ в\ 02.12.03_773d6ba1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 834px;
+}
+
+.bg_main_content4 {
+    background: url("/static/images/contents4.png");
+    background-size: cover;
+    width: 100%;
+    height: 834px;
+}
+
+.bg_main_content5 {
+    background: url("/static/images/Изображение\ WhatsApp\ 2024-04-01\ в\ 02.20.02_ee68630f.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 834px;
+}
+
 .bg_img {
     background-size: cover;
     width: 100%;
     height: auto;
 }
 
-.slider_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 5%;
+.slider {
+    width: 100%;
+    position: relative;
+}
+
+.slider_container, .slider_container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5% 15% 0 15%;
+    text-align: center;
 }
 
 .slider_element_container {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     max-width: 100%;
-    height: 65%;
-    overflow-x: auto;
+    height: 60%;
     white-space: nowrap;
-    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.slider_container2 {
+    height: auto;
 }
 
 .slider_element {
@@ -429,15 +508,26 @@ main {
     cursor: pointer;
 }
 
+.slider_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 3.7vw;
+    color: #000000;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
 .element_img {
     width: 100%;
     height: 50%;
 }
 
-.slider_element4 .element_img img {
+/* .slider_element4 .element_img img {
     width: 326px;
     height: 223px;
-}
+} */
 
 footer {
     display: -webkit-box;
