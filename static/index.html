@@ -13,7 +13,7 @@
     <div class="container">
       <div class="head">
         <div class="head_img">
-          <a href="https://carang.co.kr/">
+          <a href="http://91.147.92.210:1515/static/index.html">
             <img src="../static/images/main_logo.png">
           </a>
         </div>
@@ -66,13 +66,17 @@
                     Теперь вы можете получить обслуживание автомобиля не выходя из дома или офиса.
                 </p>
               </div>
-  
+              <div class="block_undertext hidden_adapt_block">
+                <p>
+                    На сайте <a>Касури</a> доступны 350 000 примеров обслуживания.
+                </p>
+              </div>
               <div class="block_button main_page_button bg_img">
                 <a href="https://play.google.com/store/apps/details?id=com.dpc.carpro2" target="_blank"><img src="./images/btn_google_play.png"></a>
                 <a href="https://apps.apple.com/kr/app/%EC%B9%B4%EC%88%98%EB%A6%AC-%EC%9B%90%ED%95%98%EB%8A%94-%EC%8B%9C%EA%B0%84%EA%B3%BC-%EC%9E%A5%EC%86%8C%EB%A1%9C-%EB%B0%A9%EB%AC%B8%ED%95%98%EB%8A%94-%EC%B0%A8%EB%9F%89%EC%A0%95%EB%B9%84-%EC%84%9C%EB%B9%84%EC%8A%A4/id96824379" target="_blank"><img src="./images/btn_app_store.png"></a>
               </div>
 
-              <div class="block_undertext">
+              <div class="block_undertext hidden_block">
                 <p>
                     На сайте <a>Касури</a> доступны 350 000 примеров обслуживания.
                 </p>
@@ -84,7 +88,10 @@
 
       <!-- Нужно подправить картинку -->
       <div class="info_img">
-          <img src="/static/images/bez-linii.jpeg" alt=" " class="bg_img">
+          <picture>
+            <source media="(max-width: 640px)" srcset="\static\images\info_img_m.png" type="image/png">
+            <img src="/static/images/bez-linii.jpeg" alt=" " class="bg_img">
+          </picture>
       </div>
 
       <div class="nav_2_content bg_icon bg_main_content2">
@@ -155,7 +162,7 @@
       <div class="nav_2_content bg_icon bg_main_content5">
         <div class="block_text_container main_content2_text">
           <div class="block_text">
-            <div class="block_maintext">
+            <div class="block_maintext adapt_text">
               <div class="block_title">
                 B2B сервис интеллектуального управления
               </div>
@@ -175,7 +182,10 @@
       </div>
 
       <div class="info_img">
-          <img src="/static/images/clients.png" alt=" " class="bg_img">
+        <picture>
+          <source media="(max-width: 640px)" srcset="\static\images\contents6_m.png" type="image/png">
+          <img src="../static/images/clients.png" alt=" " class="bg_img">
+        </picture>
       </div>
 
       <div class="nav_2_content bg_icon bg_review">
@@ -394,7 +404,10 @@
       </div>
 
       <div class="info_img">
+        <picture>
+          <source media="(max-width: 640px)" srcset="\static\images\contents11_m.png" type="image/png">
           <img src="/static/images/contents11.png" alt=" " class="bg_img">
+        </picture>
       </div>
     </div>
   </main>
