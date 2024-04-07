@@ -15,6 +15,7 @@ func main() {
 	mux.Handle("/static/", http.StripPrefix("/static", files))
 	fmt.Println("14")
 	mux.HandleFunc("/", Homepage)
+	mux.HandleFunc("/intro", Intro)
 	fmt.Println("15")
 	err := http.ListenAndServe(":1515", mux)
 	if err != nil {
@@ -33,6 +34,20 @@ func Homepage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if r.URL.Path != "/" {
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(http.StatusText(http.StatusBadRequest)))
+		return
+	}
+	http.ServeFile(w, r, "./static/index.html")
+}
+func Intro(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet {
+
+		w.WriteHeader(http.StatusBadRequest)
+		w.Write([]byte(http.StatusText(http.StatusBadRequest)))
+		return
+	}
+	if r.URL.Path != "/intro" {
 		w.WriteHeader(http.StatusBadRequest)
 		w.Write([]byte(http.StatusText(http.StatusBadRequest)))
 		return

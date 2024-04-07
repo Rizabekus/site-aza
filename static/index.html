@@ -13,16 +13,16 @@
     <div class="container">
       <div class="head">
         <div class="head_img">
-          <a href="http://91.147.92.210:1515/static/index.html">
+          <a href="http://91.147.92.210:1515/">
             <img src="../static/images/main_logo.png">
           </a>
         </div>
         <div class="nav-container">
           <div class="b1">
-            <a href="home.html">Профиль компании</a>
+            <a href="http://91.147.92.210:1515/intro">Профиль компании</a>
           </div> 
           <div class="b2"> 
-            <a href="home.html#section_2">Услуги</a>
+            <a href="http://91.147.92.210:1515/intro" onclick="scrollToElement('section_2')">Услуги</a>
           </div> 
           <div class="b3">
             <a href="https://www.carsuri.co.kr/contact?tab=runoil" target="_blank">Запрос на партнерство</a>
@@ -37,8 +37,8 @@
             <span></span>
         </label>
         <ul class="menu__box">
-            <li><a class="menu__item" target="_blank" href="home.html">Профиль компании</a></li>
-            <li><a class="menu__item" target="_blank" href="home.html#section_2">Услуги</a></li>
+            <li><a class="menu__item" href="http://91.147.92.210:1515/intro">Профиль компании</a></li>
+            <li><a class="menu__item"  href="http://91.147.92.210:1515/intro">Услуги</a></li>
             <li><a class="menu__item" target="_blank" href="https://www.carsuri.co.kr/contact?tab=runoil">Запрос на партнерство</a></li>  
         </ul>
       </div>
@@ -207,7 +207,7 @@
       
       <div class="slider">
         <div class="slider_container">
-          <div class="slider_title">Сервис Carang</div>
+          <div class="slider_title">Сервис Eurasia</div>
           <div class="slider_element_container">
             <div class="slider_element slider_element1">
               <div class="element_img">
@@ -354,7 +354,7 @@
               </div>
 
               <div class="block_title white_title blue_block_title">
-                Carang - платформа автомобильного афтермаркета, открывающая новую культуру обслуживания.
+                Eurasia - платформа автомобильного афтермаркета, открывающая новую культуру обслуживания.
               </div>
             </div>
           </div>
@@ -438,11 +438,21 @@
               Номер бизнеса: 242-86-00160 │ Регистрационный номер торговой деятельности: № 2021-Инчхон, Ёнсугу-2269
             </p>
             <p>
-              Авторское право ⓒ 2020 carang. Все права защищены.
+              Авторское право ⓒ 2020 Eurasia. Все права защищены.
             </p>
           </div>
         </div>
     </div>
   </footer>
 </body>
+
+<script>
+  function scrollToElement(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      // Smooth scroll to the element
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  </script>
 </html>

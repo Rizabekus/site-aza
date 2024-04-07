@@ -13,16 +13,16 @@
     <div class="container">
         <div class="head">
           <div class="head_img">
-            <a href="http://91.147.92.210:1515/static/index.html">
+            <a href="http://91.147.92.210:1515/">
               <img src="../static/images/main_logo.png">
             </a>
           </div>
           <div class="nav-container">
               <div class="b1">
-                <a href="#section_1">Профиль компании</a>
+                <a href="" onclick="scrollToElement('section_1')">Профиль компании</a>
               </div> 
               <div class="b2"> 
-                <a href="#section_2">Услуги</a>
+                <a href="" onclick="scrollToElement('section_2'); return false">Услуги</a>
               </div> 
               <div class="b3">
                 <a href="https://www.carsuri.co.kr/contact?tab=runoil" target="_blank">Запрос на партнерство</a>
@@ -37,8 +37,8 @@
             <span></span>
           </label>
           <ul class="menu__box">
-              <li><a class="menu__item" target="_blank" href="#section_1">Профиль компании</a></li>
-              <li><a class="menu__item" target="_blank" href="#section_2">Услуги</a></li>
+              <li><a class="menu__item" href="" onclick="scrollToElement('section_1')">Профиль компании</a></li>
+              <li><a class="menu__item" href="" onclick="scrollToElement('section_2')">Услуги</a></li>
               <li><a class="menu__item" target="_blank" href="https://www.carsuri.co.kr/contact?tab=runoil">Запрос на партнерство</a></li>  
           </ul>
         </div>
@@ -59,7 +59,7 @@
               Начало нового управления автомобилем
               <h2 class="zhir">
                 <b>
-                  Управление транспортными средствами &lsquo;<b>Carang</b>&rsquo; в моих руках
+                  Управление транспортными средствами &lsquo;<b>Eurasia</b>&rsquo; в моих руках
                 </b>
               </h2>
             </h2>
@@ -84,7 +84,7 @@
           Дорога офиса в Сеуле
         </p>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.666689205991!2d71.39915247779213!3d51.11460957172667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245857b43be34df%3A0xbce83846dc96ed9b!2z0JbQmiBTcG9ydCBDaXR5!5e0!3m2!1skk!2skz!4v1711406630745!5m2!1skk!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1583.0648583231814!2d126.88549286382586!3d37.48126519669036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7b40fa00dc87%3A0x483c24717ccaec7d!2z7JeQ7L2U7IaM7ZSE7Yq4!5e0!3m2!1sru!2sus!4v1712516086940!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
 
@@ -267,7 +267,7 @@
             Номер бизнеса: 242-86-00160 │ Регистрационный номер торговой деятельности: № 2021-Инчхон, Ёнсугу-2269
           </p>
           <p>
-            Авторское право ⓒ 2020 carang. Все права защищены.
+            Авторское право ⓒ 2020 Eurasia. Все права защищены.
           </p>
         </div>
       </div>
@@ -275,5 +275,13 @@
 
   </footer>
 </body>
-
+<script>
+  function scrollToElement(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      // Smooth scroll to the element
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  </script>
 </html>
