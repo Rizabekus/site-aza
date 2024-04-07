@@ -52,8 +52,9 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
-  display: block;
+  /* display: block; */
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
@@ -394,7 +395,7 @@ main {
 @media(max-width: 640px) {
     .block_maintext {
         max-width: 85%;
-        padding: 15% 0;
+        padding: 8% 0;
     }
 }
 
@@ -682,7 +683,7 @@ picture {
 @media(max-width: 640px) {
     .block_text .block_body {
         font-size: 4vw;
-        line-height: 7.4vw;
+        line-height: 5.4vw;
     }
 }
 
