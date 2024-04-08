@@ -92,7 +92,6 @@ select {
 } */
 
 .container {
-    max-width: 1920px;
     width: 100%;
     margin: 0px 0px;
 }
@@ -133,7 +132,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 80px;
+    height: 7.41vh;
     width: 100%;
     padding: 0 10%;
     display: -webkit-box;
@@ -150,7 +149,7 @@ header {
     justify-content: center; 
     */
     background-color: white; /* белый фон */
-    height: 80px; /* ширина 100px */
+    height: 80px;/* ширина 80px */
     padding: 0px; /* отступы внутри блока */
     position: relative; /* необходимо для абсолютного позиционирования дочерних элементов */
 
@@ -163,6 +162,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+@media (min-width:2000px) {
+    .head {
+        height: 7.41vh;/* ширина 80px */
+    }
+}
         
 .head img {
     /* position: absolute; абсолютное позиционирование */
@@ -171,6 +175,14 @@ header {
     display: flex;
     align-items: center;
 }
+
+@media (min-width:2000px) {
+    .head_img {
+        width: 12vh;
+        height: auto;
+    }
+}
+
 
 .nav-container {
     /*
@@ -201,6 +213,11 @@ header {
     background-color: transparent; /* делаем фон кнопки прозрачным */
     opacity: 0.8; /* устанавливаем прозрачность */
     transition: color 0.3s; /* добавляем плавный переход для изменения цвета текста */
+}
+@media (min-width:2000px) {
+    .nav-container a {
+        font-size: 1.63vw;
+    }
 }
 
 .nav-container a:hover {
@@ -248,7 +265,7 @@ header .menu__btn {
 	top: 30px;
 	right: 8%;
 	width: 26px;
-	height: 26px;
+	/* height: 26px; */
 	cursor: pointer;
 	z-index: 4;
   }
@@ -326,7 +343,7 @@ header .menu__item {
 }
 
 
-@media (max-height:932px) or (max-width: 1366px) {
+@media(max-width: 768px) {
     body {
         overflow-x: hidden;
         overflow-y: scroll;
@@ -336,7 +353,7 @@ header .menu__item {
     }
 
     .hamburger-menu .logo {
-        padding: 20px 60px 0 20px;
+        padding: 10px 60px 5px 10px;
     }
 
     .hamburger-menu .logo a img{
@@ -788,7 +805,7 @@ picture {
 .bg_icon {
     background-size: cover;
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 
 .bg_repair {
@@ -796,7 +813,7 @@ picture {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 
 @media(max-width: 640px) {
@@ -825,7 +842,7 @@ picture {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 @media (max-width: 640px) {
     .bg_review{
@@ -841,7 +858,7 @@ picture {
     background-position: center; /* Центрируем изображение */
     background-repeat: no-repeat; /* Отключаем повторение изображения */
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 @media (max-width: 640px) {
     .bg_main_content2 {
@@ -857,7 +874,7 @@ picture {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 @media (max-width: 640px) {
     .bg_main_content3 {
@@ -873,7 +890,7 @@ picture {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 @media (max-width: 640px) {
     .bg_main_content4 {
@@ -889,7 +906,7 @@ picture {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
 }
 @media (max-width: 640px) {
     .bg_main_content5 {
@@ -987,7 +1004,7 @@ picture {
     }
 .slider {
     width: 100%;
-    height: 834px;
+    height: 77.22vh;
     position: relative;
     background-color: #F7F8FA;
 }
@@ -1118,7 +1135,8 @@ footer {
     justify-content: center;
     width: 100%;
     /* height: 120px; */
-    padding: 5px 10%;
+    height: 11.11vh;
+    /* padding: 5px 10%; */
     /* padding: auto; */
     bottom: 0;
     left: 0;
@@ -1171,7 +1189,7 @@ footer {
 .logo {
     display: flex;
     justify-content: right;
-    align-items: center;
+    align-items: self-start;
     margin-right: 40px;
     margin-left: 2%;
     padding: 5px 0;
