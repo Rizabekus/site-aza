@@ -132,7 +132,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    height: 7.41vh;
+    height: 80px;
     width: 100%;
     padding: 0 10%;
     display: -webkit-box;
@@ -141,6 +141,11 @@ header {
     background: #ffffff;
     z-index: 99999;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+@media (min-width:2000px) {
+    header {
+        height: 7.41vh;
+    }
 }
 
 .head {
@@ -262,7 +267,7 @@ header .menu__btn {
 	display: flex;
 	align-items: center;
 	position: fixed;
-	top: 30px;
+	top: 40px;
 	right: 8%;
 	width: 26px;
 	/* height: 26px; */
