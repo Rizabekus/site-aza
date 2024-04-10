@@ -902,6 +902,7 @@ picture {
 
 @media(max-width: 640px) {
     .bg_repair {
+        height: auto;
         background: none;
     }
     .bg_repair picture {
