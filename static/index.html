@@ -73,8 +73,19 @@
                 </p>
               </div>
               <div class="block_button main_page_button bg_img">
-                <a href="https://play.google.com/store/apps/details?id=com.dpc.carpro2" target="_blank"><img src="../static/images/btn_google_play.png"></a>
-                <a href="https://apps.apple.com/kr/app/%EC%B9%B4%EC%88%98%EB%A6%AC-%EC%9B%90%ED%95%98%EB%8A%94-%EC%8B%9C%EA%B0%84%EA%B3%BC-%EC%9E%A5%EC%86%8C%EB%A1%9C-%EB%B0%A9%EB%AC%B8%ED%95%98%EB%8A%94-%EC%B0%A8%EB%9F%89%EC%A0%95%EB%B9%84-%EC%84%9C%EB%B9%84%EC%8A%A4/id96824379" target="_blank"><img src="../static/images/btn_app_store.png"></a>
+                <button class="app_button open-modal-btn" onclick="openModal()">
+                  <img src="../static/images/btn_google_play.png">
+                </button>
+                <button class="app_button open-modal-btn" onclick="openModal()">
+                  <img src="../static/images/btn_app_store.png">
+                </button>
+
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img src="/static/images/Приложение_ещё_в_разработке_m.png" alt="Изображение">
+                  </div>
+                </div>
               </div>
 
               <div class="block_undertext hidden_block">
@@ -448,5 +459,29 @@
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  </script>
+</script>
+<script>
+  // Находим все кнопки с классом "open-modal-btn"
+var modalBtns = document.getElementsByClassName("open-modal-btn");
+
+// Проходимся по каждой кнопке и назначаем обработчик события
+for (var i = 0; i < modalBtns.length; i++) {
+  modalBtns[i].addEventListener("click", openModal);
+}
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </html>
