@@ -1261,12 +1261,17 @@ footer {
     }
 }
 
-.footer_element{
+.footer_element {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
     color: #888888;
+}
+@media (min-width:2000px) {
+    .footer_element {
+        font-size: 16px;
+    }
 }
 
 
