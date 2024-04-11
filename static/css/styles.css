@@ -1016,7 +1016,7 @@ picture {
     .bg_main_content5 {
         background: url("../images/main_content5_m.png");
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
     }
 }
