@@ -424,13 +424,8 @@ main {
 @media(max-width: 640px) {
     .block_maintext {
         max-width: 85%;
-        padding: 8% 0;
+        padding: 0 0;
     }
-}
-
-.adapt_text {
-    margin: 10px 0;
-    padding: 0;
 }
 
 .main_page_maintext {
@@ -522,6 +517,13 @@ main {
         padding: 10% 0;
     }
 }
+@media (max-width:280px) {
+    .hands img {
+        object-fit:cover;
+    }
+}
+
+
 
 .ms {
     width: 100%; /* ширина контейнера на всю ширину экрана */
@@ -688,6 +690,20 @@ picture {
     }
 }
 
+.adapt_text {
+    margin: 10px 0;
+    padding: 0;
+}
+@media(max-width: 640px) {
+    .adapt_text {
+        margin: 0px 0;
+    }
+    .block_text .adapt_title {
+        margin: 5px 0;
+    }
+}
+
+
 .block_text .blue_block_title {
     margin: 15px 0;
 }
@@ -713,6 +729,9 @@ picture {
     .block_text .block_body {
         font-size: 4vw;
         line-height: 5.4vw;
+    }
+    .block_text .adapt_body {
+        line-height: 5.2vw;
     }
 }
 
@@ -949,7 +968,7 @@ picture {
     .bg_main_content2 {
         background: url("../images/main_contents2_m.png");
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
     }
 }
